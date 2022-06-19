@@ -10,10 +10,9 @@ import org.testng.annotations.*;
 @CucumberOptions(
         features = {"src/test/java/features"},
         glue = {"stepDefinitions", "util"},
-        tags = "@HomePage",
+        tags = "@Phone",
         plugin = {
                 "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
-                "json:Reports/CucumberReport/Report",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         }
 )
